@@ -1,0 +1,47 @@
+/* Estilos de sección about me */
+.main {
+    margin-top: 15em;
+    background-color: #1B1B1B;
+    /* grid-column: span 4; */
+    padding: 3em;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.main .me {
+    grid-column: 1;
+    text-align: center;
+}
+
+.main img {
+    height: 10em;
+    border-radius: 100%;
+    grid-column: 4;
+}
+
+.about_me{
+    background-color: rgba(27, 27, 27, 0.842);
+    /* grid-column: span 4; */
+    padding: 2em; 
+}
+/* Estilos de sección proyects */
+.proyects {
+    background-color: #1B1B1B;
+    /* grid-column: span 4; */
+    padding: 2em;
+}
+
+/* skills */
+.skills{
+    background-color: rgba(27, 27, 27, 0.842);
+    /* grid-column: span 4; */
+    padding: 2em; 
+}
+
+.contact_me{
+    background-color: #1B1B1B;
+    /* grid-column: span 4; */
+    padding: 2em;
+}
