@@ -6,12 +6,11 @@
 }
 
 body{
-    /* background-image: url('img/art-astronomy-background-220071.jpg'); */
+    background-image: url('img/art-astronomy-background-220071.jpg');
     /* background-image: url('img/art-astronomy-constellations-1546863.jpg'); */
     /* background-image: url('img/astronomy-black-wallpaper-constellation-2150.jpg'); */
     /* background-image: url('img/background-blur-bright-220067.jpg'); */
-    background-image: url('img/blurred-blurry-dark-567985.jpg');
-    /* background-image: url('img/milky-way-starry-sky-night-sky-star-957061.jpeg');  */
+    /* background-image: url('img/blurred-blurry-dark-567985.jpg'); */
     background-repeat: no-repeat;
     color: aliceblue;
     background-attachment: fixed;
@@ -23,22 +22,25 @@ body{
 section{
     display: grid;
     grid-gap: .3em;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto);
+}
+
+.nav_bar, .main, .about_me, .proyects, .skills, .contact_me{
+    border-bottom: solid #EFB810;
+}
+.about_me, .proyects, .skills, .contact_me{
+    margin: 0% 2%;
+    padding: 3em;
 }
 
 /* Estilos del nav-bar */
-.nav_bar, .about_me, .proyects, .skills, .contact_me{
-    border-bottom: solid #EFB810;
-}
-
-
 .nav_bar{
     background-color: #1B1B1B;
     color: #1B1B1B;
     padding: .5em;
     text-align: right;
-    /* Para dejar la barra de navegación estática */
+/* Para dejar la barra de navegación estática */
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -52,13 +54,35 @@ border-radius: .3em;
 border-color: #1B1B1B;
 }
 
-/* linear-gradient */
-
-
-
-p{
-    background-color: aquamarine;
-    color: black;
-    grid-column: span 1;
+/* Estilo del footer */
+footer{
+    grid-column: span 5;
+    /* background-color: #1B1B1B; */
+    color: #ffffff;
+    text-align: center;
+    padding: .6em;
+    margin: 0% 2.5em;
 }
 
+/* linear-gradient */
+
+/* Estilos en los textos */
+.title{
+    color: #EFB810;
+    grid-column: span 3;
+    text-align: left;
+    margin: 6% 0% 6% 20%;
+    font-size: 1.5em;
+}
+
+h2{
+    text-align: center;
+    grid-column: span 5;
+    margin-bottom: 2em;
+}
+
+p, h4, h4 a{
+    color: pink;
+    grid-column: 2/5;
+    text-align: center;
+}
