@@ -34,3 +34,24 @@
     /* grid-column: span 4; */
     /* padding: 2em; */
 }
+
+/* Estilos en los textos */
+.title{
+    color: #EFB810;
+    grid-column: span 3;
+    text-align: left;
+    margin: 6% 0% 6% 20%;
+    font-size: 1.5em;
+}
+
+h2{
+    text-align: center;
+    grid-column: span 5;
+    margin-bottom: 2em;
+}
+
+p, h4, h4 a{
+    color: pink;
+    grid-column: 2/5;
+    text-align: center;
+}
