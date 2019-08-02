@@ -1,43 +1,28 @@
-/* Estilos de sección about me */
-.main {
-    margin-top: 22em;
-    background-color: #1B1B1B;
-    /* grid-column: span 4; */
-    padding: 3em;
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-}
-
+/* Estilo seccion principal */
 .main .me {
     grid-column: 1;
     text-align: center;
 }
 
 .main img {
-    height: 10em;
+    height: 15em;
     border-radius: 100%;
     grid-column: 4/5;
 }
 
 /* Estilos secciones con fondos transparentes */
-.about_me, .skills{
-    background-color: rgba(27, 27, 27, 0.685);
-    /* grid-column: span 4; */
-    /* padding: 2em;  */
+.about_me, .skills, .proyects, .contact_me{
+    background-color: rgba(27, 27, 27, 0.582);
 }
 
 /* Estilos secciones con fondo sólido */
-.proyects, .contact_me{
+/* .proyects, .contact_me{
     background-color: #1B1B1B;
-    /* grid-column: span 4; */
-    /* padding: 2em; */
-}
+} */
 
 /* Estilos en los textos */
 .title{
-    color: #EFB810;
+    color: #ffffff;
     grid-column: span 3;
     text-align: left;
     margin: 6% 0% 6% 20%;
@@ -51,7 +36,7 @@ h2{
 }
 
 p, h4, h4 a{
-    color: pink;
+    color: #FF7961;
     grid-column: 2/5;
     text-align: center;
 }
