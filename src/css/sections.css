@@ -1,0 +1,81 @@
+/* Estilo seccion principal */
+.title{
+    color: #ffffff;
+    grid-column: span 3;
+    text-align: left;
+    margin: 6% 0% 6% 20%;
+    font-size: 1.5em;
+}
+.main .me {
+    grid-column: 1;
+    text-align: center;
+}
+
+.main img {
+    height: 15em;
+    border-radius: 100%;
+    grid-column: 4/5;
+    filter: brightness(120%);
+    filter: drop-shadow(2em 1em 2em rgb(39, 38, 38));
+}
+
+/* Estilo sección "about me" */
+.about-text {
+    grid-column: span 12;
+    align-items: center; justify-content: center;
+}
+
+/* Estilo sección skills */
+
+/*.skills-icons {
+    /* align-items: center; justify-content: center; */
+/* grid-column: auto;
+}*/
+
+/* Estilos sección proyects */
+
+/* Estilos sección contacto */
+.contact-info {
+    grid-column: span 12;
+}
+
+.contact-info {
+    position: relative;
+    padding: 1em;
+
+}
+
+.main,
+.about_me,
+.proyects,
+.skills,
+.contact_me {
+    padding: 10% 4%;
+    /* grid-row: auto; */
+}
+
+.skills-title, .proyects-title, .contact-title {
+    grid-column: span 12;
+    text-align: center;
+}
+
+
+/* Estilos secciones con fondos transparentes */
+.about_me, .skills, .proyects, .contact_me{
+    background-color: rgba(27, 27, 27, 0.582);
+    margin: 0;
+    height: 0%;
+}
+
+/* Estilos secciones con fondo sólido */
+/* .proyects, .contact_me{
+    background-color: #1B1B1B;
+} */
+
+/* p, h4, h4 a{
+    color: rgb(252, 119, 96);
+    grid-column: 2/5;
+    text-align: center;
+} */
+
+/* display: flex; align-items: center; justify-content: center; */

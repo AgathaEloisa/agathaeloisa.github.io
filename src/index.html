@@ -5,35 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/ico" href="./assets/mouse.ico" class="favicon" />
     <title>I'm Agatha</title>
 </head>
 
 <body>
-    <!-- Hay que darle solución viable a este botón -->
-    <a name="up"></a>
     <header>
-        <!-- Barra de navegación -->
+        <!-- 
+    <div class="nav"> -->
         <nav class="nav_bar">
-            <div class="menu">
-                <a href="#main" id="btn_main">Inicio</a>
-                <a href="#about_me" id="btn_about">About me</a>
-                <a href="#proyects" id="btn_proyects">Proyects</a>
-                <a href="#skills" id="btn_skills">skills</a>
-                <a href="#contact_me" id="btn_contact">Contact me</a>
-            </div>
+            <ul>
+                <li><a id="go_about" href="#about">about me</a></li>
+                <li><a id="go_skills" href="#skills">skills</a></li>
+                <li><a id="go_proyects" href="#proyects">proyects</a></li>
+                <li><a id="go_contact" href="#contact">contact</a></li>
+                <li><a id="go_home" href="#inicio">Up</a></li>
+            </ul>
         </nav>
+        <!-- </div> -->
     </header>
+
     <div id="root">
 
-        <!-- Each template -->
+        <!-- vista principal -->
+        <a name="inicio">
+            <section class="main">
+                <div class="title">
+                    <h1>Agatha Sáez</br>
+                        Front-end Developer</h1>
+                </div>
+                <div class="my-photo">
+                    <img src="assets/img/yo.jpg" alt="Foto de perfil" />
+                </div>
+            </section>
+        </a>
+
+        <!-- Vista about -->
+        <a name="about">
+            <section class="about_me">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p> ipsum dolor sit ametl
+                        consectetur adipisicing elit. Ut id harum,
+                        totam deserunt molestias ipsum architecto
+                        amet nihil sit voluptatem labore temporibus
+                        libero saepe asperiores sapiente aperiam quos
+                        eum tempora? </p>
+                </div>
+            </section>
+        </a>
+
+        <!-- vista Skills -->
+        <a name="skills">
+            <section class="skills" id="skills">
+                <div class="skills-title">
+                    <h2>Skills</h2>
+                </div>
+                <!-- <div class="skills-icons">
+                
+            </div> -->
+            </section>
+        </a>
+
+        <!-- Vista Proyects -->
+        <a name="proyects">
+            <section class="proyects" id="proyects">
+                <div class="proyects-title">
+                    <h2>Mis Proyectos</h2>
+                </div>
+            </section>
+        </a>
+
+        <!-- Vidta contacto -->
+        <a name="contact">
+            <section class="contact_me">
+                <div class="contact-title">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="contact-info">
+                    <ul>
+                        <li>Puedes llamarme al <a href="tel:+56952425174">+56952425174</a></li>
+                        <li>PEnvíame un correo <a href="mailto:">ebrumaktub@gmx.com</a></li>
+                        <li><a href="http://https://www.linkedin.com/in/agatha-s%C3%A1ez-v/">visita mi Linkedin</a></li>
+                        <li><a href="http://github.com/AgathaP">conoce mi trabajo en Github </a></li>
+                    </ul>
+
+                </div>
+            </section>
+        </a>
+        <!-- Hacerlo con ul y li (?) quizás sería mejor en divs-->
+
+        <footer> Nezu Project&reg; 🐀</footer>
 
     </div>
 
-    <footer>NezuProject</footer>
-
-    <script src="app.js"></script>
-</body>
+    <script type="module" src="./app.js"></script>
+</body> 
 
 </html>

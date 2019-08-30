@@ -1,0 +1,55 @@
+/* Estilo general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../assets/img/blurred-blurry-dark-567985.jpg');
+    background-repeat: no-repeat;
+    color: aliceblue;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-position: center; */
+    scroll-behavior: smooth;
+}
+
+/* Sistema de grid in framework */
+section {
+    display: grid;
+    grid-gap: .3em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto);
+}
+
+/* Estilos generales de texto*/
+h2 {
+    text-align: center;
+    padding: 1.5em;
+    font-size: 2.5em;
+}
+
+p {
+    color: rgb(252, 119, 96);
+    font-size: 1.15em;
+}
+
+/* Estilo del footer */
+footer {
+    grid-column: span 5;
+    border-top: solid #EFB810;
+    background-color: #1B1B1B;
+    color: #ffffff;
+    text-align: center;
+    padding: .6em;
+    /* bottom: 0%; */
+    right: 0%;
+    left: 0%;
+    position: absolute;
+}
+
+/* linear-gradient */
+/* .root {
+    overflow:scroll;
+} */

@@ -1,0 +1,63 @@
+.nav_bar {
+    background-color: #1B1B1B;
+    border-bottom: solid #EFB810;
+    padding: 1em;
+    text-align: right;
+    /* Para dejar la barra de navegación estática */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav_bar ul li {
+    color: #ffffff;
+    background-color: #1B1B1B;
+    text-decoration: none;
+    text-decoration-color: #EFB810;
+    border-right: .1em solid #EFB810;
+    display: inline;
+}
+
+.nav_bar ul li a {
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Efectos en los links del navbar */
+.nav_bar a:focus {
+    outline-color: #FF7961;
+}
+
+.nav_bar a:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.274);
+    transition: all 1s ease;
+}
+
+.nav_bar ul li a:hover:before {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 736px){
+    .nav_bar ul {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+}
+
+}

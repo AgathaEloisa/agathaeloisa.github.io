@@ -1,82 +1,32 @@
-// main / Título y fotografía
-window.onload
-let mainTemplate = document.getElementById('root').innerHTML =
+import { skills } from './js/skills-data.js';
+import { proyects } from './js/proyects-data.js'
 
-    `<section class="main">
-<div class="title">
-    <h1>Agatha Sáez<h1>
-    <h1>Front-end Developer</h1>
+// skills / itero la data e imprimo logos
+    console.log(skills)
+    for(let i = 0; i < skills.length; i++){
+        document.getElementById('skills').innerHTML += `
+    <div class="skills-icons">
+    <img src="${skills[i].img}" alt="${skills[i].name}">
+    </div>`;
+    }
+
+
+// Proyects / imprimo proyectos en una tarjeta, lo itero
+console.log(proyects[0].title)
+for(let i = 0; i < proyects.length; i++){
+document.getElementById('proyects').innerHTML += `
+<div class="row">
+<div class="col s12 m6">
+  <div class="card">
+    <div class="card-image">
+      <img src="${proyects[i].img}" alt="${proyects[i].title}">
+      <span class="card-title">${proyects[i].title}</span>
+      <a href="${proyects[i].link}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+    </div>
+    <div class="card-content">
+      <p>${proyects[i].text}</p>
+    </div>
+  </div>
 </div>
-<img src="img/yo.jpg" alt="Foto de perfil">
-</section>`;
-
-//about / Una descripción mía
-let aboutTemplate = document.getElementById('btn_about').addEventListener('click', () => {
-    document.getElementById('root').innerHTML =
-
-    `<!-- <a name="about_me"></a> -->
-<section class="about_me">
-    <h2>About me</h2>
-    <p> ipsum dolor sit amet
-        consectetur adipisicing elit. Ut id harum,
-        totam deserunt molestias ipsum architecto
-        amet nihil sit voluptatem labore temporibus
-        libero saepe asperiores sapiente aperiam quos
-        eum tempora? </p>
-</section>
-<!-- </a> -->`;
-})
-
-// proyectos / Dónde se muestran mis proyectos
-let proyectsTemplate = document.getElementById('btn_proyects').addEventListener('click', () =>{
-    document.getElementById('root').innerHTML =
-
-    `<!-- <a name="proyects"> -->
-<section class="proyects">
-    <h2>Mis Proyectos</h2>
-    <p> ipsum dolor sit amet
-        consectetur adipisicing elit. Ut id harum,
-        totam deserunt molestias ipsum architecto
-        amet nihil sit voluptatem labore temporibus
-        libero saepe asperiores sapiente aperiam quos
-        eum tempora? </p>
-</section>
-<!-- </a> -->`;
-})
-
-// skills / Prsento mis habilidades
-let skillsTemplate = document.getElementById('btn_skills').addEventListener('click', () => {
-    document.getElementById('root').innerHTML =
-
-    ` <!-- <a name="skills"> -->
-<section class="skills">
-    <h2>Skills</h2>
-    <p> ipsum dolor sit amet
-        consectetur adipisicing elit. Ut id harum,
-        totam deserunt molestias ipsum architecto
-        amet nihil sit voluptatem labore temporibus
-        libero saepe asperiores sapiente aperiam quos
-        eum tempora? </p>
-</section>
-<!-- </a> -->`;
-})
-
-// contacto / Formas para contactarse conmigo
-let contactTemplate = document.getElementById('btn_contact').addEventListener('click',() => {
-    document.getElementById('root').innerHTML = 
-
-    `<!-- <a name="contact_me"> -->
-    <section class="contact_me">
-        <h2>Contacto</h2>
-        <div>
-            <h4>Teléfono: +56952425174</h4>
-            <h4>Email: <a href="mailto:">ebrumaktub@gmx.com</a></h4>
-        </div>
-    </section>
-    <!-- </a> -->`;
-})
-
-// Template de inicio / mi foto
-let returnMainTemplate = document.getElementById('btn_main').addEventListener('click', () => {
-    document.getElementById('root').innerHTML = mainTemplate;
-})
+</div>`;
+}
