@@ -5,6 +5,7 @@
     text-align: left;
     margin: 6% 0% 6% 20%;
     font-size: 1.5em;
+    font-family: 'Hepta Slab', serif;
 }
 .main .me {
     grid-column: 1;
@@ -27,6 +28,22 @@
 
 /* Estilo sección skills */
 
+  /* Texto que aparece al poner el curso sobre la imagen */
+  .skills-icons p, .contact-info p {
+    visibility: hidden;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: #fff;
+    text-align: center;
+    padding: .2em .1em;
+    border-radius: .5em;
+    position: relative;
+    z-index: 1;
+  }
+
+  .skills-icons:hover p, .contact-info:hover p{
+    visibility: visible;
+  }
 /*.skills-icons {
     /* align-items: center; justify-content: center; */
 /* grid-column: auto;
@@ -35,42 +52,46 @@
 /* Estilos sección proyects */
 
 /* Estilos sección contacto */
-.contact-info {
+/* .contact-info {
     grid-column: span 12;
-}
+    text-align: center;
+} */
 
 .contact-info {
-    position: relative;
+    /* position: relative; */
     padding: 1em;
-
 }
 
 .main,
 .about_me,
-.proyects,
-.skills,
-.contact_me {
+.skills {
     padding: 10% 4%;
     /* grid-row: auto; */
 }
 
-.skills-title, .proyects-title, .contact-title {
+.proyects, .contact_me {
+    padding: 5% 4%;
+}
+
+.skills-title, .proyects-title, .contact-title{
     grid-column: span 12;
     text-align: center;
 }
 
 
 /* Estilos secciones con fondos transparentes */
-.about_me, .skills, .proyects, .contact_me{
+.skills, .contact_me{
     background-color: rgba(27, 27, 27, 0.582);
     margin: 0;
     height: 0%;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Estilos secciones con fondo sólido */
-/* .proyects, .contact_me{
+.about_me, .proyects{
     background-color: #1B1B1B;
-} */
+    font-family: 'Roboto', sans-serif;
+}
 
 /* p, h4, h4 a{
     color: rgb(252, 119, 96);

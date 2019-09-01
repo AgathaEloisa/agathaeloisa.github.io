@@ -1,0 +1,24 @@
+.contact-info {
+    /* width: 0em;
+    height: 0em; */
+    margin: 5em 50% 10em 50%;
+}
+
+.contact-info a {
+    color: darkcyan;
+    background-color: #1b1b1b;
+    font-size: 4em;
+    padding: .3em;
+    border-radius: 100%;
+    /* text-align: center; */
+    position: relative;
+}
+
+/* Rosado o ese lndo darkcyan?? */
+
+/* .contact-info .contact-p { */
+    /* text-align: center; */
+    /* padding: 2em 0em; */
+    /* position: relative; */
+    /* padding: 2% 25%; */
+/* } */
