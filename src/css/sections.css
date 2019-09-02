@@ -1,5 +1,5 @@
 /* Estilo seccion principal */
-.title{
+.title {
     color: #ffffff;
     grid-column: span 3;
     text-align: left;
@@ -7,6 +7,7 @@
     font-size: 1.5em;
     font-family: 'Hepta Slab', serif;
 }
+
 .main .me {
     grid-column: 1;
     text-align: center;
@@ -15,7 +16,6 @@
 .main img {
     height: 15em;
     border-radius: 100%;
-    grid-column: 4/5;
     filter: brightness(120%);
     filter: drop-shadow(2em 1em 2em rgb(39, 38, 38));
 }
@@ -23,42 +23,37 @@
 /* Estilo sección "about me" */
 .about-text {
     grid-column: span 12;
-    align-items: center; justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Estilo sección skills */
 
-  /* Texto que aparece al poner el curso sobre la imagen */
-  .skills-icons p, .contact-info p {
+/* Texto que aparece al poner el curso sobre la imagen */
+.skills-icons img {
+    width: 7em;
+    height: 7em;
+}
+
+.skills-icons p,
+.contact-info p {
     visibility: hidden;
-    width: 100%;
+    /* width: 100%; */
     background-color: rgba(0, 0, 0, 0.753);
     color: #fff;
     text-align: center;
     padding: .2em .1em;
     border-radius: .5em;
-    position: relative;
+    position: absolute;
     z-index: 1;
-  }
+}
 
-  .skills-icons:hover p, .contact-info:hover p{
+.skills-icons:hover p,
+.contact-info:hover p {
     visibility: visible;
-  }
-/*.skills-icons {
-    /* align-items: center; justify-content: center; */
-/* grid-column: auto;
-}*/
-
-/* Estilos sección proyects */
-
-/* Estilos sección contacto */
-/* .contact-info {
-    grid-column: span 12;
-    text-align: center;
-} */
+}
 
 .contact-info {
-    /* position: relative; */
     padding: 1em;
 }
 
@@ -66,21 +61,24 @@
 .about_me,
 .skills {
     padding: 10% 4%;
-    /* grid-row: auto; */
 }
 
-.proyects, .contact_me {
+.proyects,
+.contact_me {
     padding: 5% 4%;
 }
 
-.skills-title, .proyects-title, .contact-title{
+.skills-title,
+.proyects-title,
+.contact-title {
     grid-column: span 12;
     text-align: center;
 }
 
 
 /* Estilos secciones con fondos transparentes */
-.skills, .contact_me{
+.skills,
+.contact_me {
     background-color: rgba(27, 27, 27, 0.582);
     margin: 0;
     height: 0%;
@@ -88,15 +86,60 @@
 }
 
 /* Estilos secciones con fondo sólido */
-.about_me, .proyects{
+.about_me,
+.proyects {
     background-color: #1B1B1B;
     font-family: 'Roboto', sans-serif;
 }
 
-/* p, h4, h4 a{
-    color: rgb(252, 119, 96);
-    grid-column: 2/5;
-    text-align: center;
-} */
+/* Responsive / movil */
+@media (max-width: 736px) {
+    section {
+        display: grid;
+        grid-gap: .3em;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(auto);
+    }
 
-/* display: flex; align-items: center; justify-content: center; */
+    /* main */
+
+    .main {
+        padding-top: 40%;
+    }
+
+    .title,
+    .my-photo {
+        grid-column: span 12;
+        text-align: center;
+    }
+
+    .title {
+        /* text-align: left; */
+        margin: 0%;
+        background-color: rgba(27, 27, 27, 0.582);
+        margin-bottom: 5%;
+    }
+
+    /* skills */
+    .skills-icons {
+        grid-column: span 3;
+        width: 5em;
+        height: 5em;
+    }
+
+    .skills-icons img {
+        width: 5em;
+        height: 5em;
+    }
+
+    /* proyects */
+    .card {
+        grid-column: span 12;
+        margin-bottom: 1em;
+    }
+
+    .card-image img {
+        width: 100%;
+    }
+
+}

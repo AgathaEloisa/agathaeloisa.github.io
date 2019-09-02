@@ -8,14 +8,14 @@
 body {
     background-image: url('../assets/img/blurred-blurry-dark-567985.jpg');
     background-repeat: no-repeat;
-    color: aliceblue;
+    color: rgb(250, 250, 242);
     background-attachment: fixed;
     background-size: cover;
     /* background-position: center; */
     scroll-behavior: smooth;
 }
 
-/* Sistema de grid in framework */
+/* Sistema de grid */
 section {
     display: grid;
     grid-gap: .3em;
@@ -53,3 +53,14 @@ footer {
 /* .root {
     overflow:scroll;
 } */
+
+/* responsive */
+@media (max-width: 736px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

@@ -5,7 +5,8 @@
 }
 
 .contact-info a {
-    color: darkcyan;
+    color: rgb(252, 119, 96);
+    /* color: darkcyan; */
     background-color: #1b1b1b;
     font-size: 4em;
     padding: .3em;
@@ -22,3 +23,12 @@
     /* position: relative; */
     /* padding: 2% 25%; */
 /* } */
+
+@media (max-width: 736px) {
+    .contact-info {
+        grid-column: span 6;
+        margin: 0%;
+margin-bottom:  3em;
+    }
+
+}
