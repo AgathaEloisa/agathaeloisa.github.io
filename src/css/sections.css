@@ -27,6 +27,19 @@
     justify-content: center;
 }
 
+.embedded {
+    background-color: rgb(3, 3, 3);
+    padding: 2em;
+}
+
+.embedded span {
+    color: blue;
+}
+
+.embedded p {
+    color: #ffffff;
+}
+
 /* Estilo sección skills */
 
 /* Texto que aparece al poner el curso sobre la imagen */
@@ -53,18 +66,13 @@
     visibility: visible;
 }
 
-.contact-info {
-    padding: 1em;
-}
-
 .main,
 .about_me,
 .skills {
     padding: 10% 4%;
 }
 
-.proyects,
-.contact_me {
+.proyects{
     padding: 5% 4%;
 }
 

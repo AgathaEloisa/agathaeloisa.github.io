@@ -1,34 +1,36 @@
 .contact-info {
     /* width: 0em;
     height: 0em; */
-    margin: 5em 50% 10em 50%;
+    margin: 0em 50% 10em 60%;
 }
 
 .contact-info a {
     color: rgb(252, 119, 96);
-    /* color: darkcyan; */
     background-color: #1b1b1b;
     font-size: 4em;
-    padding: .3em;
+    padding: .2em .3em;
     border-radius: 100%;
-    /* text-align: center; */
     position: relative;
 }
 
 /* Rosado o ese lndo darkcyan?? */
 
 /* .contact-info .contact-p { */
-    /* text-align: center; */
-    /* padding: 2em 0em; */
-    /* position: relative; */
-    /* padding: 2% 25%; */
+/* text-align: center; */
+/* padding: 2em 0em; */
+/* position: relative; */
+/* padding: 2% 25%; */
 /* } */
 
 @media (max-width: 736px) {
     .contact-info {
-        grid-column: span 6;
         margin: 0%;
-margin-bottom:  3em;
+        margin-bottom: 3em;
+    }
+
+    .contact-info a {
+        grid-column: span 6;
+        grid-row: auto;
     }
 
 }

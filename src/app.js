@@ -22,12 +22,21 @@ document.getElementById('root').innerHTML = `
             <section class="about_me">
                 <div class="about-text">
                     <h2>Sobre mí</h2>
-                    <p> ipsum dolor sit ametl
-                        consectetur adipisicing elit. Ut id harum,
-                        totam deserunt molestias ipsum architecto
-                        amet nihil sit voluptatem labore temporibus
-                        libero saepe asperiores sapiente aperiam quos
-                        eum tempora? </p>
+                <div class="embedded">
+                <span>
+                <span><</span>
+                p
+                <span>></span>
+            </span>
+            <p>Tengo 27 años, soy de Santiago. 
+                Estoy en constante búsqueda de nuevos conocimientos y herramientas en 
+                torno a la programación.</p>
+            <span>
+                <span> < </span>
+                /p
+                <span>></span>
+            </span>
+                </div>
                 </div>
             </section>
         </a>
