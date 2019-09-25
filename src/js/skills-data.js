@@ -9,4 +9,5 @@ export const skills = [
     { name:'Firebase', img: './assets/icon_skills/firebase.png' },
     { name:'Bootstrap', img: './assets/icon_skills/bootstrap.png' },
     { name:'Materialize', img: './assets/icon_skills/materialize.png' },
+    { name: 'Figma', img: './assets/icon_skills/figma.png'}
 ]

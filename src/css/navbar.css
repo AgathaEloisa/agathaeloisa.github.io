@@ -1,39 +1,71 @@
 .nav_bar {
     background-color: #1B1B1B;
     border-bottom: solid #EFB810;
-    padding: 1em;
-    text-align: right;
+    padding: 0em 1em;
+    position: relative;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
     /* Para dejar la barra de navegación estática */
     position: fixed;
     z-index: 1000;
     top: 0;
     right: 0;
     left: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
-.nav_bar ul li {
+.nav_bar::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.nav_bar_menu {
+    top: 100%;
+    right: 0;
+    position: absolute;
+    background: #1B1B1B;
     color: #ffffff;
+    height: 0;
+    overflow: hidden;
+}
+
+/* despliegue de menú */
+.open {
+    height: auto;
+}
+/* ------------------ */
+.nav_bar_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_bar_menu li {
+    border-bottom: .1em solid #EFB810;
     background-color: #1B1B1B;
+    border: .1em solid #EFB810;
+} 
+
+/* .nav_bar_menu li:first-child {
+    border-top:none;
+} */
+
+.nav_bar_menu a {
+    color: #EFB810;
+    display: block;
+    padding: 1em 2em;
+    text-transform: uppercase;
     text-decoration: none;
-    text-decoration-color: #EFB810;
-    border-right: .1em solid #EFB810;
-    display: inline;
 }
 
-.nav_bar ul li a {
-    padding: 1em;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
+.nav_bar_menu a:hover,
+.nav_bar_menu a:focus {
+    background: #EFB810;
+    color: #1B1B1B;
+    border: .1em solid #1B1B1B;
 }
 
-/* Efectos en los links del navbar */
-.nav_bar a:focus {
-    outline-color: #FF7961;
-}
-
-.nav_bar a:before {
+.nav_bar_menu a:before {
     content: "";
     position: absolute;
     top: 0%;
@@ -44,21 +76,94 @@
     transition: all 1s ease;
 }
 
-.nav_bar ul li a:hover:before {
-    width: 100%;
+.menu-toggle {
+    padding: .9em .4em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    border: .1em solid #EFB810;
+}
+/* Efecto en el despliegue*/
+.menu-open .hamburger{
+    transform: rotate(45deg);
+  }
+  
+  .menu-open .hamburger::before {
+    opacity: 1;
+  }
+  
+  .menu-open .hamburger::after {
+    transform: rotateY(-3px) rotate(-90deg);
+  }
+  
+  /* Menú hamburguesa */
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+content: '';
+display: block;
+background: #EFB810;
+height: 4px;
+width: 1.75em;
+border-radius: 3px;
 }
 
-/* Responsive */
-@media (max-width: 1024px){
-
+.hamburger::before {
+  transform: translateY(-.4em);
 }
 
-@media (max-width: 736px){
-    .nav_bar ul {
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto);
+.hamburger::after {
+  transform: translateY(.3em);
 }
 
+/* CV */
+.cv_download {
+    /* grid-column: 1;
+    grid-row: 1; */
+    text-align: left;
+}
+
+.cv_download {
+    width: 2.8em;
+}
+
+.cv_download:hover {
+    filter: invert(100%);
+}
+
+.cv p {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: #fff;
+    text-align: center;
+    padding: 0em .3em;
+    border-radius: .5em;
+    position: absolute;
+    z-index: 1;
+}
+
+.cv:hover p {
+    visibility: visible;
+}
+
+/* Botón para volver al inicio */
+.up img {
+    background-color: #EFB810;
+    border-radius: 100%;
+    text-align: right;
+    width: 2.5em;
+    height: 2.5em;
+    padding: .3em;
+    /* para dejar el botón estático */
+    position: fixed;
+    z-index: 1000;
+    bottom: 1.5em;
+    right: 1.7em;
+}
+
+.up img:hover,
+.up img:focus {
+    background-color: rgb(245, 193, 39);
+    box-shadow: .5em .5em 1em rgb(5, 4, 4);
+    cursor: pointer;
 }
