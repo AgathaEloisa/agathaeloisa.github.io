@@ -22,8 +22,8 @@ for(let i = 0; i < proyects.length; i++){
     </div>
     <div class="back-card">
             <h3>${proyects[i].title}</h3>
-            <a class="demo" href="${proyects[i]["github-link"]}" target="blank">DEMO</a>
-            <a class="repo" href="${proyects[i].link}" target="blank"><i class="${contact[1].icon}"></i></a>
+            <a class="demo" href="${proyects[i].link}" target="blank">DEMO</a>
+            <a class="repo" href="${proyects[i]["github-link"]}" target="blank"><i class="${contact[1].icon}"></i></a>
             <p>${proyects[i].text}</p>
     </div>
 </div>
