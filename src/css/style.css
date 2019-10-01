@@ -62,8 +62,8 @@ footer {
 @media (max-width: 700px){
 
     body{
-        /* background-image: url('../assets/img/background-responsive.png'); */
-        background-image: none;
+        background-image: url('../assets/img/background-responsive.png');
+        /* background-image: none; */
         background-color: rgb(179, 79, 62);
     }
 
