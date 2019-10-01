@@ -67,11 +67,14 @@
     }
 
     .menu-toggle {
-        padding: .9em .4em;
+        /* width: 2.5em;
+        height: 2em; */
+        padding: .8em .3em;
         position: absolute;
         top: .5em;
         right: .5em;
         border: .1em solid #EFB810;
+        border-radius: .3em;
     }
 
     /* Efecto en el despliegue*/
@@ -94,9 +97,9 @@
         content: '';
         display: block;
         background: #EFB810;
-        height: 4px;
-        width: 1.75em;
-        border-radius: 3px;
+        height: .12em;
+        width: 1.5em;
+        border-radius: .1em;
     }
 
     .hamburger::before {
@@ -160,17 +163,14 @@
 }
 
 .down {
-    filter: invert(100%);
+    filter: invert(100%) brightness(82%);
     position: fixed;
     z-index: 1000;
-    bottom: 1em;
-    left: 50%;
+    bottom: 0%;
+    left: 45%;
+    width: 3em;
+    height: 3em;
 }
-
-/* .down img {
-    width: 5em;
-    height: 4em;
-} */
     /* Responsive celulares */
 @media (max-width: 700px) {
     /* CV */
