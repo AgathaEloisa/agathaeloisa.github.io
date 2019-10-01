@@ -59,10 +59,11 @@ footer {
     padding: 7% 3.5% 9% 3.5%;
 }
 
-@media (min-width: 700px){
+@media (max-width: 700px){
 
     body{
-        background-image: none;
+        /* background-image: none; */
+        background-image: url('src/assets/img/background-responsive.png');
     }
 
 }
