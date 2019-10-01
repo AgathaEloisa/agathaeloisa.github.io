@@ -159,6 +159,18 @@
     cursor: pointer;
 }
 
+.down {
+    filter: invert(100%);
+    position: fixed;
+    z-index: 1000;
+    bottom: 1em;
+    left: 50%;
+}
+
+/* .down img {
+    width: 5em;
+    height: 4em;
+} */
     /* Responsive celulares */
 @media (max-width: 700px) {
     /* CV */
