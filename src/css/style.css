@@ -7,9 +7,11 @@
 }
 
 body {
-    background-image: url('../assets/img/background-desktop.png');
+    /* background-image: url('../assets/img/background-desktop.png'); */
+    /* fondo si hay problemas al cargar la imagen */
+    background-color: crimson;
     /* para que el fondo se ajuste */
-    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     color: rgb(250, 250, 242);
     background-attachment: fixed;
