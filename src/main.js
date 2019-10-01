@@ -36,11 +36,21 @@ for(let i = 0; i < skills.length; i++){
     document.getElementById('skills').innerHTML += `
         <div class="icon_skills">
             <div class="skills_img">
-                <img src="${skills[i].img}" alt="${skills[i].name}">
+                <img class="${skills[i].class}" src="${skills[i].img}" alt="${skills[i].name}">
             </div>
                 <p>${skills[i].name}</p>
         </div>`;
 };
+
+// for(let i = 0; i < skills.length; i++){
+//     document.getElementById('skills').innerHTML += `
+//         <div class="icon_skills">
+//             <div class="skills_img">
+//             <i class="${skills[i].icon}">${skills[i].name}</i>
+//             </div>
+//                 <p>${skills[i].name}</p>
+//         </div>`;
+// };
 
 // agrego clase para el despliegue de menú
 document.getElementById('menu-toggle').addEventListener('click', () => {

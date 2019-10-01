@@ -289,10 +289,19 @@
 .skills_img img {
     width: 5em;
     height: 5em;
+    filter: invert(100%) sepia(200%) saturate(250%);
 }
 
 .skills_img {
     text-align: center;
+    /* -webkit-filter: grayscale(1); */
+    /* filter: grayscale(1); */
+    /* filter: contrast(45) hue-rotate(20deg) saturate(1000%); */
+    /* fill: red; */
+}
+
+.diferent_icon {
+    filter: opacity(-6%);
 }
 
 .icon_skills p {
