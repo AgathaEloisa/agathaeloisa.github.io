@@ -63,8 +63,8 @@ footer {
 
     body{
         /* background-image: none; */
-        background-image: url('src/assets/img/background-responsive.png');
-        background-attachment: fixed;
+        background-image: none;
+        background-color: rgb(155, 19, 46);
     }
 
 }
