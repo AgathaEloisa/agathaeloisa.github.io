@@ -9,7 +9,7 @@
 body {
     background-image: url('../assets/img/background-desktop.png');
     /* fondo si hay problemas al cargar la imagen */
-    background-color: crimson;
+    background-color: rgb(179, 79, 62);
     background-position: center center;
     background-repeat: no-repeat;
     color: rgb(250, 250, 242);

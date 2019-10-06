@@ -121,10 +121,10 @@
 
 .listed {
     grid-column: 1;
-    color: #c2c1be;
+    color: #9e9d99;
     padding-right: 1em;
     margin-right: 1em;
-    border-right: .1em solid #c2c1be;
+    border-right: .1em solid #9e9d99;
     /* border: .5em solid red; */
 }
 
@@ -134,8 +134,8 @@
     /* border: .5em solid green; */
 }
 
-.embedded span {
-    color: blue;
+.pargraph span {
+    color:rgb(62, 62, 179);;
 }
 
 /*------------- Estilo de los proyectos -------------*/
@@ -286,7 +286,7 @@
     padding: .5em;
 }
 
-.skills_img img {
+.each_icon {
     width: 5em;
     height: 5em;
     filter: invert(100%) sepia(200%) saturate(250%);
@@ -301,7 +301,11 @@
 }
 
 .diferent_icon {
-    filter: opacity(-6%);
+    width: 5em;
+    height: 5em;
+    filter: invert(50%) sepia(100% )saturate(230%);
+    /* filter: opacity(-22%) sepia(2000%); */
+    /* filter: saturate(300%); */
 }
 
 .icon_skills p {
