@@ -61,7 +61,7 @@
 
     .nav_bar_menu a:hover,
     .nav_bar_menu a:focus {
-        background: #EFB810;
+        /* background: #EFB810; */
         color: #1B1B1B;
         border: .1em solid #1B1B1B;
     }
@@ -239,8 +239,9 @@
 
 .nav_bar_menu a:hover,
 .nav_bar_menu a:focus {
-    background: #1B1B1B;
-    color: #EFB810;
+    /* background: #1B1B1B; */
+    color: #863e32;
+    text-decoration: underline #FF7961;
     border: none;
 }
 
