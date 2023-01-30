@@ -2,7 +2,7 @@ export const proyects = [{
         title: 'CipherChat',
         img: 'src/assets/proyects/cipherChat.png',
         text: "Esta app usa el método de cifrado cesar. <br> Una vez que escribas tu mensaje en la caja de texto, puedes cifrarlo o descifrarlo según sea el caso.",
-        link: 'https://agathap.github.io/SCL008-Cipher/src/#html',
+        link: 'https://agathaeloisa.github.io/SCL008-Cipher/src/#html',
         'github-link': 'https://github.com/AgathaP/SCL008-Cipher'
     },
     {
@@ -16,7 +16,7 @@ export const proyects = [{
         title: 'Pet Lovers',
         img: 'src/assets/proyects/pet-lovers.png',
         text: 'Una red social gratuita que pretende dar a los amantes de los animales, un lugar dónde compartir sus anécdotas, presumir a sus mascotas y ponerlos en contacto con gente que comparte ese mismo amor.',
-        link: 'https://agathap.github.io/SCL009-Social-Network/#/login',
+        link: 'https://agathaeloisa.github.io/SCL009-Social-Network/#/login',
         'github-link': 'https://github.com/AgathaP/SCL009-Social-Network'
     },
     {
