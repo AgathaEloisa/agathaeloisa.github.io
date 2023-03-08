@@ -16,11 +16,36 @@
 </head>
 
 <body>
+    <style>
+        .main_title {
+	margin: auto;
+	display: table;
+}
+
+.main_title h1 { 
+	position: relative; 
+	float: left;
+}
+
+.main_title h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+    </style>
+
     <header>
         <nav class="nav_bar">
             <a class="cv" href="./src/assets/CV_AS.pdf" target="_blank" download="CV-AgathaSaez.pdf">
                 <img class="cv_download" src="src/assets/img/iconfinder_16_4698582.png" alt="descargar CV">
-                <p>descargar CV</p>
+                <p class="text-over">descargar CV</p>
             </a>
             <div id="nav_bar_menu" class="nav_bar_menu">
                 <ul class="ul_navbar">
@@ -45,7 +70,7 @@
                 <div class="container">
                     <div class="main_title">
                         <h1>Agatha Sáez</br>
-                            Desarrolladora Front-end</h1>
+                            Desarrolladora Front-end<span>&#160;</span></h1>
                     </div>
                     <div id="contact"></div>
                     <div class="my-photo">
@@ -112,7 +137,9 @@
     </a> -->
 
     <a href="#">
-        <div class="up">
+        <div 
+        id="up"
+        >
             <img src="src/assets/img/iconfinder_essential_set_up_double_1110959.png" alt="Up">
         </div>
     </a>

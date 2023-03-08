@@ -9,7 +9,11 @@ export const skills = [
     { name:'Firebase', img: 'src/assets/icon_skills/firebase.png', class: 'each_icon' },
     { name:'Bootstrap', img: 'src/assets/icon_skills/bootstrap.png', class: 'diferent_icon' },
     { name:'Materialize', img: 'src/assets/icon_skills/materialize.png', class: 'each_icon' },
-    { name: 'Figma', img: 'src/assets/icon_skills/figma.png', class: 'each_icon' }
+    { name: 'Figma', img: 'src/assets/icon_skills/figma.png', class: 'each_icon' },
+    { name: 'Python', img: 'src/assets/icon_skills/python.png', class: 'each_icon' },
+    { name: 'C#', img: 'src/assets/icon_skills/c-sharp.png', class: 'each_icon' },
+    { name: 'SQL', img: 'src/assets/icon_skills/sql-server.png', class: 'diferent_icon' },
+    { name: 'React', img: 'src/assets/icon_skills/react.png', class: 'each_icon' }
 ]
 
 // export const skills = [
