@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/AgathaP/Portafolio/issues"
   },
-  "homepage": "https://github.com/AgathaP/Portafolio#readme"
+  "homepage": "https://github.com/AgathaP/Portafolio#readme",
+  "dependencies": {
+    "typed.js": "^2.0.132"
+  }
 }

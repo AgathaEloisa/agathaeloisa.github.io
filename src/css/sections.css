@@ -38,6 +38,7 @@
     display: flex;
     align-items: center;
     padding: 4%;
+    width: 100%;
 }
 
 .my-photo {
