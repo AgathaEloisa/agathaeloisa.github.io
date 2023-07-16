@@ -131,12 +131,13 @@
 
 .pargraph {
     grid-column: 2;
-    color: #ffffff;
+    color: #eeb9b9;
     /* border: .5em solid green; */
 }
 
 .pargraph span {
-    color:rgb(62, 62, 179);;
+    color:rgb(55, 55, 153);
+    font-weight: lighter;
 }
 
 /*------------- Estilo de los proyectos -------------*/

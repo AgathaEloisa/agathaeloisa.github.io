@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab+Oxygen+Mono|VT323&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- favicon -->
     <link rel="shortcut icon" type="image/ico" href="src//assets/mouse.ico" class="favicon" />
     <link rel="stylesheet" href="src/css/navbar.css">
@@ -48,10 +50,34 @@
 
     <header>
         <nav class="nav_bar">
-            <a class="cv" href="./src/assets/CV_AS.pdf" target="_blank" download="CV-AgathaSaez.pdf">
-                <img class="cv_download" src="src/assets/img/iconfinder_16_4698582.png" alt="descargar CV">
+            <div class="nav-item dropdown" id="options">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img id="cv_download" class="cv_download nav-item dropdown" src="src/assets/img/iconfinder_16_4698582.png" alt="descargar CV" />
+                </a>
                 <p class="text-over">descargar CV</p>
-            </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <span value="cv_es">
+                            <a class="dropdown-item cv" href="./src/assets/CV_AS.pdf" target="_blank" download="CV-AgathaSaez.pdf">Español</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span value="cv_en">
+                            <a class="dropdown-item cv" href="src/assets/CV-AS-en.pdf" target="_blank" download="resume-AgathaSaez.pdf">Inglés</a>
+                        </span>
+                    </li>
+                </ul>
+              </div>
+            <!-- <img id="cv_download" class="cv_download nav-item dropdown" src="src/assets/img/iconfinder_16_4698582.png" alt="descargar CV" />
+            <p class="text-over">descargar CV</p> -->
+
+            <!-- <div id="options"> -->
+                <!-- <span value="cv_es">
+                    <a class="cv" href="./src/assets/CV_AS.pdf" target="_blank" download="CV-AgathaSaez.pdf">Español</a>
+                </span> -->
+                <!-- <span value="cv_en"><a class="cv" href="./src/assets/CV_AS-en.pdf" target="_blank" download="resume-AgathaSaez.pdf">Inglés</a>
+                </span> -->
+            <!-- </div> -->
             <div id="nav_bar_menu" class="nav_bar_menu">
                 <ul class="ul_navbar">
                     <li><a id="go_about" href="#about">Sobre mí</a></li>
@@ -104,7 +130,7 @@
                     </p>
                     <p class="pargraph">
                         <span>
-                          <</span><span class="p">p</span><span>></span>
+                            <</span><span class="p">p</span><span>></span>
                                 <br>
                                 Soy una desarrolladora frontend de Valparaíso, estudiante de la carrera Analista
                                 programador en Inacap.
@@ -163,6 +189,9 @@
             loop: true
         });
     </script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>

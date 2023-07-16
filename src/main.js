@@ -97,3 +97,11 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
         skillsLi.className = '';
     }
  };
+
+//  document.getElementById('cv_download').addEventListener('click', () => {
+//     if(document.getElementById('options').style.display === 'none') {
+//     document.getElementById('options').style.display = 'block';
+// } else {
+//     document.getElementById('options').style.display = 'none';
+// }
+//  })

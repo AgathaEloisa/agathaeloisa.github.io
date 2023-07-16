@@ -23,8 +23,7 @@
         top: 100%;
         right: 0;
         position: absolute;
-       /* background: #1B1B1B;*/
-        /*color: #ffffff;*/
+        background-color: #cb9ca1;
         height: 0;
         overflow: hidden;
     }
@@ -53,9 +52,13 @@
     /* .nav_bar_menu li:first-child {
     border-top:none;
 } */
+    .options {
+        position: baseline;
+        display: none;
+    }
 
     .nav_bar_menu a {
-        color: #EFB810;
+        color: #863e32;;
         display: block;
         padding: 1em 2em;
         text-transform: uppercase;
@@ -246,7 +249,7 @@
 .nav_bar_menu li {
     display: inline-block;
     border: none;
-    border-right: .1em solid #EFB810;
+    border-right: .1em solid #EFB810; 
     padding-right: .5em;
 }
 .section {

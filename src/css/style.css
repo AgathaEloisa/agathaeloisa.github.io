@@ -12,9 +12,10 @@ body {
     background-color: #424242;
     background-position: center center;
     background-repeat: no-repeat;
-    color: rgb(250, 250, 242);
+    /* color: rgb(250, 250, 242); */
     background-attachment: fixed;
     background-size: cover;
+    color:#f0e9e9;
 }
 
 /* Sistema de grid */
@@ -30,7 +31,7 @@ footer {
     grid-column: span 5;
     border-top: solid #EFB810;
     background-color: #cb9ca1;
-    color: #ffffff;
+    color: #f2efef;
     text-align: center;
     padding: .6em;
     /* bottom: 0%; */
