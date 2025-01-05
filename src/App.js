@@ -1,28 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/custom.css';
+import SkillView from './components/section/skills/SkillsView';
+import ProjectView from './components/section/project/ProjectView';
+import AboutView from './components/section/about/AboutView';
+import Home from './components/common/home/Home';
 
-import { Button } from 'reactstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button color="primary">Danger!</Button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home />
+      <ProjectView />
+      <AboutView />
+      <SkillView />
+    </>
   );
 }
 

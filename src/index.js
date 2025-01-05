@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './css/custom.css';
+import MainNav from './components/common/navbar/MainNav';
+import Footer from './components/common/footer/footer';
+import ProgressBar from './components/common/progress/ProgressBar';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <MainNav />
+    <ProgressBar />
     <App />
+    <Footer />
   </React.StrictMode>
 );
 
